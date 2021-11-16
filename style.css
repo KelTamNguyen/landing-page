@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,300&family=Roboto:ital,wght@0,400;0,900;1,300&display=swap');
+
+* {
+    font-family: 'Roboto';
+}
+
+.hero, footer {
+    background-color: #1f2937;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px;
+}
+
+.hero-left {
+    width: 500px;;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    align-items: center;
+}
+
+.header h1 {
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero-left h1 {
+    color: #f9faf8;
+    font-size: 48px;
+}
+
+.hero-left p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+button {
+    background-color: #3882f6;
+    font-weight: bold;
+    color: #f9faf8;
+    border-radius: 6px;
+    border: none;
+    padding: 4px 16px;
+}
+
+button:hover {
+    /*There's probably a better way to darken on hover*/
+    background-color: #0b5ed7;
+    color: #fff;
+}
+
+img {
+    height: auto;
+    width: 500px;
+}
+
+footer {
+    font-size: 18px;
+    color: #e5e7eb;
+    text-align: center;
+    padding: 24px;
+}
