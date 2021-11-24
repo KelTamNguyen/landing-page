@@ -8,34 +8,49 @@ body {
     margin: 0;
 }
 
-.hero, footer {
+header, .welcome, footer {
     background-color: #2c545c;
 }
 
-a:visited {
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
     color: #e5e7eb;
 }
 
-.hero-content {
+
+.welcome {
     display: flex;
     justify-content: space-between;
     padding: 120px;
 }
 
-.hero-left {
-    width: 500px;;
+.welcome-text {
+    width: 500px;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 120px;
-    align-items: center;
-}
-
-.header h1 {
+.welcome-text h1 {
     color: #f9faf8;
+    font-size: 48px;
+}
+
+.welcome-text p {
     font-size: 24px;
+    color: #e5e7eb;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #e5e7eb;
 }
 
 nav {
@@ -44,7 +59,6 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
     font-size: 18px;
     color: #e5e7eb;
 }
@@ -53,15 +67,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.hero-left h1 {
-    color: #f9faf8;
-    font-size: 48px;
-}
-
-.hero-left p {
-    font-size: 18px;
-    color: #e5e7eb;
-}
 
 button {
     background-color: #60aeb0;
@@ -73,10 +78,12 @@ button {
     text-align: center;
     padding: 8px 32px;
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px
 }
 
 button:hover {
-    /*There's probably a better way to darken on hover*/
     background-color: #359AB7;
     color: #fff;
     border: 1px solid transparent;
@@ -142,10 +149,6 @@ figcaption {
     padding: 60px 300px;
 }
 
-.cta-container p {
-    text-align: center;
-}
-
 .cta {
     display: flex;
     justify-content: space-evenly;
@@ -154,10 +157,6 @@ figcaption {
     color: #e5e7eb;
     border-radius: 8px;
     padding: 2rem;
-}
-
-.cta button a {
-    text-decoration: none;
 }
 
 .cta-txt {
